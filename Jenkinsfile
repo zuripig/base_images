@@ -20,7 +20,7 @@ pipeline {
         stage('zip') {
             steps {
                 sh 'echo zipping'
-                sh 'zip -r python.zip ./*.py
+                sh 'zip -r python.zip ./*.py'
             }
         }
         stage('Artifact') {
