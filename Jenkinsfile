@@ -17,9 +17,10 @@ pipeline {
                 sh 'echo scanning'
             }
         }
-        stage('HTML Output') {
+        stage('zip') {
             steps {
-                sh 'echo output'
+                sh 'echo zipping'
+                sh 'zip -r python.zip ./*.py
             }
         }
         stage('Artifact') {
