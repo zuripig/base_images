@@ -1,3 +1,5 @@
 message = 'hello world'
-for x in message:
-  print(message)
+
+def lambda_handler(event, context):
+  for x in message:
+    print(message)
